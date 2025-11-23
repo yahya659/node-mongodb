@@ -75,24 +75,4 @@ app.post("/user/add.html", (req, res) => {
       console.log("Error in client creation", err);
     });
 });
-// app.post("/search", (req, res) => {
-//   Custmor.find({ firstname: req.body.searchText })
-//     .then((result) => {
-//       res.render("user/search",{arr:result});
-//       // console.log( req.body.searchText)
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
-app.post("/search", (req, res) => {
-  Custmor.find({
-    firstname: { $regex: req.body.searchText, $options: "i" }
-  })
-    .then((result) => {
-      res.render("user/search", { arr: result });
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+
