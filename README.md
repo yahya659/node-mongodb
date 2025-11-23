@@ -1,5 +1,6 @@
 🛒 Node.js & MongoDB Customer Management
-<p align="center"> <img src="public/images/index.png" alt="Index Page" width="600"> </p> <p align="center"> <img src="public/images/create.png" alt="Create Customer Page" width="600"> </p>
+![Dashboard Preview](./public//imges/index.png)
+![Dashboard Preview](./public//imges/create.png)
 وصف المشروع
 
 مشروع Customer Management مبني باستخدام Node.js, Express, MongoDB و EJS.
